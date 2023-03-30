@@ -6,11 +6,11 @@ Este é o repositório oficial do projeto de site para vendas de bebidas. O obje
 ## Funcionalidades
 O site terá as seguintes funcionalidades:
 
--Cadastro de usuários
--Login e autenticação
--Busca de produtos
--Visualização de detalhes do produto
--Adição de produtos ao carrinho
--Finalização da compra
--Histórico de compras
--Painel de administração para gerenciamento de produtos e usuários
+- Cadastro de usuários
+- Login e autenticação
+- Busca de produtos
+- Visualização de detalhes do produto
+- Adição de produtos ao carrinho
+- Finalização da compra
+- Histórico de compras
+- Painel de administração para gerenciamento de produtos e usuários
