@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exemplo de Cabeçalho</title>
+    <link rel="stylesheet" href="./style/produto.css">
+    <script src="./script/produto.js"></script>
+    
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="./imagens/logo.png" alt="Logo da Empresa" onclick="pagina_inicial('index.html')">
+      <img id="nome_empresa" src="./imagens/nome_empresa.png" alt="Nome da Empresa" onclick="pagina_inicial('index.html')">
+      <form>
+        <input type="text" placeholder="Pesquisar...">
+        <button>Pesquisar</button>
+      </form>
+      <a href="login.html">
+        <img id="perfil" src="imagens/minha_conta.png" alt="Minha Conta" class="account">
+      </a>
+      <img id="carrinho" src="imagens/carrinho.png" alt="Carrinho de Compras" class="cart">
+    </header>
+     <div class="categorias">
+      <div class="categoria" onclick="pagina_categoria('categoria.html')">
+        <h2 id="titulo_categoria">WHISKYS</h2>
+        <img src="./imagens/WHISKYS.png" alt="WHISKYS">
+      </div>
+      <div class="categoria">
+        <h2>LICORES</h2>
+        <img src="./imagens/LICORES.png" alt="LICORES">
+      </div>
+      <div class="categoria">
+        <h2>GINS</h2>
+        <img src="./imagens/GINS.png" alt="GINS">
+      </div>
+      <div class="categoria">
+        <h2>VODKAS</h2>
+        <img src="./imagens/VODKAS.png" alt="VODKAS">
+      </div>
+      <div class="categoria">
+        <h2>TEQUILAS</h2>
+        <img src="./imagens/TEQUILAS.png" alt="TEQUILAS">
+      </div>
+      <div class="categoria">
+        <h2>ESPUMANTES</h2>
+        <img src="./imagens/ESPUMANTES.png" alt="ESPUMANTES">
+      </div>
+    </div>
+    <div class="produto_card">
+      <div class="produto-imagem">
+        <img src="./imagens/redlabel.png" alt="Imagem do Produto">
+      </div>
+      <div class="produto_detalhes">
+        <h3>Red Label - 1L</h3>
+        <p>Valor: R$ 100,00</p>
+        <div class="quantidade">
+          <button onclick="diminuir()">-</button>
+          <input type="text" value="1" readonly>
+          <button onclick="aumentar()">+</button>
+        </div>
+        <button class="comprar">Comprar</button>
+        <div class="cep">
+          <input type="text" placeholder="Digite o CEP">
+          <button class="calcular">Calcular</button>
+      </div>
+      <div class="informacoes">
+        <h2 id="descricao">Descrição</h2>
+        <p id="sobre">Considerado o whiskey mais conhecido e consumido do mundo, o Red Label é sinônimo de alta qualidade, sabor e de uma valiosa história. </br></br>
+          Tipo: Whiskey Blended Scotch</br>
+          Fundação: 1909</br>
+          Origem: Escócia</br>
+          Teor alcoólico: 40%</br></p>
+    </div>
+  </div>
+  </div>
+  <footer>
+    <p>La Diversité &copy; 2023. Todos os direitos reservados.</p>
+    <p>Endereço: Avenida Severiano de Almeida, 1110 - Getúlio  Vargas - RS</p>
+    <p>Telefone: (54) 99621-4447 | Email: ladiversiteoficial@gmail.com</p>
+    <p>
+      <a href="#">Termos de Serviço</a> | <a href="#">Política de Privacidade</a>
+    </p>
+  </footer>
+</body>
+</html>
+    
+    
