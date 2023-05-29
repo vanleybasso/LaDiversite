@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>La Diversité - Home</title>
-    <link rel="stylesheet" href="./style/pagina_inicial.css">
-    <script src="./script/pagina_inicial.js"></script>
+    <title>La Diversité - Categoria Licores</title>
+    <link rel="stylesheet" href="./style/categoria_whisky.css">
+    <script src="./script/categoria_licor.js"></script>
   </head>
   <body>
     <header>
-      <img id="logo" src="./imagens/logo.png" alt="Logo da Empresa" onclick="location.reload();">
-      <img id="nome_empresa" src="./imagens/nome_empresa.png" alt="Nome da Empresa" onclick="location.reload();">
+      <img id="logo" src="./imagens/logo.png" alt="Logo da Empresa" onclick="pagina_inicial('index.html')">
+      <img id="nome_empresa" src="./imagens/nome_empresa.png" alt="Nome da Empresa" onclick="pagina_inicial('index.html')">
       <form>
         <input type="text" placeholder="Pesquisar...">
         <button>Pesquisar</button>
@@ -24,11 +24,11 @@
         <h2 id="titulo_categoria">WHISKYS</h2>
         <img src="./imagens/WHISKYS.png" alt="WHISKYS">
       </div>
-      <div class="categoria" onclick="categoria_licor('categoria_licor.html')">
+      <div class="categoria" onclick="location.reload();">
         <h2>LICORES</h2>
         <img src="./imagens/LICORES.png" alt="LICORES">
       </div>
-      <div class="categoria" onclick="categoria_gin('categoria_gins.html')">
+      <div class="categoria" onclick="categoria_gin('categoria_gins.html')" >
         <h2>GINS</h2>
         <img src="./imagens/GINS.png" alt="GINS">
       </div>
@@ -46,26 +46,14 @@
       </div>
     </div>
     <img id="slogan" src="./imagens/slogan.png" alt="slogan" class="slogan">
-    <div id="top_vendidos">
-      <h2>OS MAIS VENDIDOS</h2>
-    </div>
-    <div class="produtos">
+    <div id="whiskys">
+        <h2>LICORES</h2>
+      </div>
+      <div class="produtos">
         <div class="produto">
-          <img src="./imagens/redlabel.png" alt="Produto 1" onclick="redirectToProductPage('produto.html')">
-          <h2 id="titulo" onclick="redirectToProductPage('produto.html')">Red Label - 1L </h2>
-          <div class="preco">R$100.00</div>
-          <div class="subtitulo">No pix ou no dinheiro</div>
-          <div class="quantidade">
-            <button onclick="diminuir(event)">-</button>
-            <input type="number" value="1" min="1">
-            <button onclick="aumentar(event)">+</button>
-          </div>
-          <button class="comprar" onclick="redirectToProductPage('produto.html')">Compre Já</button>
-        </div>
-        <div class="produto">
-          <img src="./imagens/tanqueray.jpeg" alt="Produto 2">
-          <h2>Tanqueray - 700ml</h2>
-          <div class="preco">R$120.00</div>
+          <img src="./imagens/licor43.jpg" alt="Product 1">
+          <h2 id="titulo">Licor 43 - 700ml </h2>
+          <div class="preco">R$150.00</div>
           <div class="subtitulo">No pix ou no dinheiro</div>
           <div class="quantidade">
             <button onclick="diminuir(event)">-</button>
@@ -75,22 +63,34 @@
           <button class="comprar">Compre Já</button>
         </div>
         <div class="produto">
-          <img src="./imagens/absolut.jpg" alt="Produto 3">
-          <h2>Absolut - 1L</h2>
-          <div class="preco">R$90.00
-          </div>
-          <div class="subtitulo">No pix ou no dinheiro</div>
-          <div class="quantidade">
-            <button onclick="diminuir(event)">-</button>
-            <input type="number" value="1" min="1">
-            <button onclick="aumentar(event)">+</button>
-          </div>
-          <button class="comprar">Compre Já</button>
-        </div>
-        <div class="produto">
-          <img src="./imagens/Jagermeister.png" alt="Produto 4">
+          <img src="./imagens/Jagermeister.png" alt="Product 2">
           <h2>Jägermeister - 700ml</h2>
           <div class="preco">R$110.00</div>
+          <div class="subtitulo">No pix ou no dinheiro</div>
+          <div class="quantidade">
+            <button onclick="diminuir(event)">-</button>
+            <input type="number" value="1" min="1">
+            <button onclick="aumentar(event)">+</button>
+          </div>
+          <button class="comprar">Compre Já</button>
+        </div>
+        <div class="produto">
+          <img src="./imagens/sheridans.png" alt="Product 3">
+          <h2>Sheridan's - 700ml</h2>
+          <div class="preco">R$140.00
+          </div>
+          <div class="subtitulo">No pix ou no dinheiro</div>
+          <div class="quantidade">
+            <button onclick="diminuir(event)">-</button>
+            <input type="number" value="1" min="1">
+            <button onclick="aumentar(event)">+</button>
+          </div>
+          <button class="comprar">Compre Já</button>
+        </div>
+        <div class="produto">
+          <img src="./imagens/amarula.png" alt="Product 4">
+          <h2>Amarula - 700ml</h2>
+          <div class="preco">R$90.00</div>
           <div class="subtitulo">No pix ou no dinheiro</div>
           <div class="quantidade">
             <button onclick="diminuir(event)">-</button>
@@ -102,9 +102,9 @@
       </div>
       <div class="produtos">
         <div class="produto">
-          <img src="./imagens/licor43.jpg" alt="Produto 5">
-          <h2>Licor 43 - 700ml</h2>
-          <div class="preco">R$150.00</div>
+          <img src="./imagens/vanilla.png" alt="Product 5">
+          <h2>Amarula Vanilla Spice - 700ml</h2>
+          <div class="preco">R$120.00</div>
           <div class="subtitulo">No pix ou no dinheiro</div>
           <div class="quantidade">
             <button onclick="diminuir(event)">-</button>
@@ -114,9 +114,9 @@
           <button class="comprar">Compre Já</button>
         </div>
         <div class="produto">
-          <img src="./imagens/jackdanields.png" alt="Produto 6">
-          <h2>Jack Daniel's Old 7 - 1L</h2>
-          <div class="preco">R$139.90</div>
+          <img src="./imagens/baileys.jpg" alt="Product 6">
+          <h2>Baileys - 750ml</h2>
+          <div class="preco">R$80.00</div>
           <div class="subtitulo">No pix ou no dinheiro</div>
           <div class="quantidade">
             <button onclick="diminuir(event)">-</button>
@@ -126,9 +126,9 @@
           <button class="comprar">Compre Já</button>
         </div>
         <div class="produto">
-          <img src="./imagens/jackfire.png" alt="Produto 7">
-          <h2>Jack Daniel's Fire - 1L</h2>
-          <div class="preco">R$149.90</div>
+          <img src="./imagens/aperol.png" alt="Product 7">
+          <h2>Aperol Spritz - 1L</h2>
+          <div class="preco">R$130.00</div>
           <div class="subtitulo">No pix ou no dinheiro</div>
           <div class="quantidade">
             <button onclick="diminuir(event)">-</button>
@@ -138,8 +138,8 @@
           <button class="comprar">Compre Já</button>
         </div>
         <div class="produto">
-          <img src="./imagens/cuervo.png" alt="Produto 8">
-          <h2>José Cuervo - 700ml</h2>
+          <img src="./imagens/campari.png" alt="Product 8">
+          <h2>Campari - 1L</h2>
           <div class="preco">R$100.00</div>
           <div class="subtitulo">No pix ou no dinheiro</div>
           <div class="quantidade">
@@ -150,19 +150,6 @@
           <button class="comprar">Compre Já</button>
         </div>
       </div>
-      
-    <!-- Verificação de Idade -->
-    <div id="verificar_idade">
-        <h1>LA  DIVERSITÉ</h1>
-        <p>Você possui mais de 18 anos?</p>
-        <div class="botoes">
-          <button onclick="confirmarIdade()">Sim</button>
-          <button onclick="Error()">Não</button>
-        </div>
-        <h2 id="conteudo">Conteúdo para maiores de 18 anos.</h2>
-        <h4 id="maior">A venda de bebidas alcoólicas é proibida para menores de 18 anos.</h4>
-      </div>
-       
       <footer>
         <p>La Diversité &copy; 2023. Todos os direitos reservados.</p>
         <p>Endereço: Avenida Severiano de Almeida, 1110 - Getúlio  Vargas - RS</p>
@@ -171,6 +158,3 @@
           <a href="#">Termos de Serviço</a> | <a href="#">Política de Privacidade</a>
         </p>
       </footer>
-      
-</body>
-</html>

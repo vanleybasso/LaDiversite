@@ -24,7 +24,18 @@ function confirmarIdade() {
     window.location.href = url;
   }
   
-  function pagina_categoria(url) {
+  function categoria_whisky(url) {
     window.location.href = url;
   }
   
+  function categoria_licor(url) {
+    window.location.href = url;
+  }
+
+  function categoria_gin(url) {
+    window.location.href = url;
+  }
+
+  function categoria_vodka(url) {
+    window.location.href = url;
+  }

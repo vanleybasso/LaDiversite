@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Exemplo de Cabeçalho</title>
-    <link rel="stylesheet" href="./style/categoria.css">
-    <script src="./script//categoria.js"></script>
+    <title>La Diversité - Categoria Vodka</title>
+    <link rel="stylesheet" href="./style/categoria_whisky.css">
+    <script src="./script/categoria_gins.js"></script>
   </head>
   <body>
     <header>
@@ -20,19 +20,19 @@
     </header>
     </header>
      <div class="categorias">
-      <div class="categoria" onclick="location.reload();">
+      <div class="categoria" onclick="categoria_whisky('categoria_whisky.html')">
         <h2 id="titulo_categoria">WHISKYS</h2>
         <img src="./imagens/WHISKYS.png" alt="WHISKYS">
       </div>
-      <div class="categoria">
+      <div class="categoria" onclick="categoria_licor('categoria_licor.html')">
         <h2>LICORES</h2>
         <img src="./imagens/LICORES.png" alt="LICORES">
       </div>
-      <div class="categoria">
+      <div class="categoria" onclick="categoria_gin('categoria_gins.html')">
         <h2>GINS</h2>
         <img src="./imagens/GINS.png" alt="GINS">
       </div>
-      <div class="categoria">
+      <div class="categoria" onclick="location.reload();">
         <h2>VODKAS</h2>
         <img src="./imagens/VODKAS.png" alt="VODKAS">
       </div>
@@ -47,25 +47,13 @@
     </div>
     <img id="slogan" src="./imagens/slogan.png" alt="slogan" class="slogan">
     <div id="whiskys">
-        <h2>WHISKYS</h2>
+        <h2>VODKA</h2>
       </div>
       <div class="produtos">
         <div class="produto">
-          <img src="./imagens/redlabel.png" alt="Product 1" onclick="redirectToProductPage('produto.html')">
-          <h2 id="titulo" onclick="redirectToProductPage('produto.html')">Red Label - 1L </h2>
-          <div class="preco">R$100.00</div>
-          <div class="subtitulo">No pix ou no dinheiro</div>
-          <div class="quantidade">
-            <button onclick="diminuir(event)">-</button>
-            <input type="number" value="1" min="1">
-            <button onclick="aumentar(event)">+</button>
-          </div>
-          <button class="comprar" onclick="redirectToProductPage('produto.html')">Compre Já</button>
-        </div>
-        <div class="produto">
-          <img src="./imagens/jackdanields.png" alt="Product 2">
-          <h2>Jack Daniel's  Old 7 - 1L</h2>
-          <div class="preco">R$139.90</div>
+          <img src="./imagens/tanqueray.jpeg" alt="Product 1">
+          <h2 id="titulo">Absolut - 1L</h2>
+          <div class="preco">R$90.00</div>
           <div class="subtitulo">No pix ou no dinheiro</div>
           <div class="quantidade">
             <button onclick="diminuir(event)">-</button>
@@ -75,97 +63,8 @@
           <button class="comprar">Compre Já</button>
         </div>
         <div class="produto">
-          <img src="./imagens/ballanta.png" alt="Product 3">
-          <h2>Ballantine's - 1L</h2>
-          <div class="preco">R$90.00
-          </div>
-          <div class="subtitulo">No pix ou no dinheiro</div>
-          <div class="quantidade">
-            <button onclick="diminuir(event)">-</button>
-            <input type="number" value="1" min="1">
-            <button onclick="aumentar(event)">+</button>
-          </div>
-          <button class="comprar">Compre Já</button>
-        </div>
-        <div class="produto">
-          <img src="./imagens/whitehorse.png" alt="Product 4">
-          <h2>White Horse - 1L</h2>
-          <div class="preco">R$95.00</div>
-          <div class="subtitulo">No pix ou no dinheiro</div>
-          <div class="quantidade">
-            <button onclick="diminuir(event)">-</button>
-            <input type="number" value="1" min="1">
-            <button onclick="aumentar(event)">+</button>
-          </div>
-          <button class="comprar">Compre Já</button>
-        </div>
-      </div>
-      <div class="produtos">
-        <div class="produto">
-          <img src="./imagens/buchanans.png" alt="Product 5">
-          <h2>Buchanan's 12 Anos - 1L</h2>
-          <div class="preco">R$200.00</div>
-          <div class="subtitulo">No pix ou no dinheiro</div>
-          <div class="quantidade">
-            <button onclick="diminuir(event)">-</button>
-            <input type="number" value="1" min="1">
-            <button onclick="aumentar(event)">+</button>
-          </div>
-          <button class="comprar">Compre Já</button>
-        </div>
-        <div class="produto">
-          <img src="./imagens/blacklabel.jpg" alt="Product 6">
-          <h2>Black Label 12 Anos - 1L</h2>
-          <div class="preco">R$180.00</div>
-          <div class="subtitulo">No pix ou no dinheiro</div>
-          <div class="quantidade">
-            <button onclick="diminuir(event)">-</button>
-            <input type="number" value="1" min="1">
-            <button onclick="aumentar(event)">+</button>
-          </div>
-          <button class="comprar">Compre Já</button>
-        </div>
-        <div class="produto">
-          <img src="./imagens/jackfire.png" alt="Product 7">
-          <h2>Jack Daniel's Fire - 1L</h2>
-          <div class="preco">R$149.90</div>
-          <div class="subtitulo">No pix ou no dinheiro</div>
-          <div class="quantidade">
-            <button onclick="diminuir(event)">-</button>
-            <input type="number" value="1" min="1">
-            <button onclick="aumentar(event)">+</button>
-          </div>
-          <button class="comprar">Compre Já</button>
-        </div>
-        <div class="produto">
-          <img src="./imagens/chivas.png" alt="Product 8">
-          <h2>Chivas 12 Anos - 1L</h2>
-          <div class="preco">R$150.00</div>
-          <div class="subtitulo">No pix ou no dinheiro</div>
-          <div class="quantidade">
-            <button onclick="diminuir(event)">-</button>
-            <input type="number" value="1" min="1">
-            <button onclick="aumentar(event)">+</button>
-          </div>
-          <button class="comprar">Compre Já</button>
-        </div>
-      </div>
-      <div class="produtos">
-        <div class="produto">
-          <img src="./imagens/honey.jpg" alt="Product 5">
-          <h2>Jack Daniel's Honey - 1L</h2>
-          <div class="preco">R$149.90</div>
-          <div class="subtitulo">No pix ou no dinheiro</div>
-          <div class="quantidade">
-            <button onclick="diminuir(event)">-</button>
-            <input type="number" value="1" min="1">
-            <button onclick="aumentar(event)">+</button>
-          </div>
-          <button class="comprar">Compre Já</button>
-        </div>
-        <div class="produto">
-          <img src="./imagens/oldparr.png" alt="Product 6">
-          <h2>Old Parr 12 Anos - 1L</h2>
+          <img src="./imagens/greygoose.jpg" alt="Product 2">
+          <h2>Grey Goose - 700ml</h2>
           <div class="preco">R$140.00</div>
           <div class="subtitulo">No pix ou no dinheiro</div>
           <div class="quantidade">
@@ -176,9 +75,10 @@
           <button class="comprar">Compre Já</button>
         </div>
         <div class="produto">
-          <img src="./imagens/bluelabel (3).png" alt="Product 7">
-          <h2>Blue Label - 700ml</h2>
-          <div class="preco">R$900.00</div>
+          <img src="./imagens/ciroc.jpg" alt="Product 3">
+          <h2>Ciroc - 750ml</h2>
+          <div class="preco">R$180.00
+          </div>
           <div class="subtitulo">No pix ou no dinheiro</div>
           <div class="quantidade">
             <button onclick="diminuir(event)">-</button>
@@ -188,9 +88,59 @@
           <button class="comprar">Compre Já</button>
         </div>
         <div class="produto">
-          <img src="./imagens/greenlabel.jpg" alt="Product 8">
-          <h2>Green Label - 700ml</h2>
+          <img src="./imagens/belvedere.png" alt="Product 4">
+          <h2>Belvedere - 750ml</h2>
+          <div class="preco">R$200.00</div>
+          <div class="subtitulo">No pix ou no dinheiro</div>
+          <div class="quantidade">
+            <button onclick="diminuir(event)">-</button>
+            <input type="number" value="1" min="1">
+            <button onclick="aumentar(event)">+</button>
+          </div>
+          <button class="comprar">Compre Já</button>
+        </div>
+      </div>
+      <div class="produtos">
+        <div class="produto">
+          <img src="./imagens/elyx.png" alt="Product 5">
+          <h2>Absolut Elyx - 1L</h2>
           <div class="preco">R$350.00</div>
+          <div class="subtitulo">No pix ou no dinheiro</div>
+          <div class="quantidade">
+            <button onclick="diminuir(event)">-</button>
+            <input type="number" value="1" min="1">
+            <button onclick="aumentar(event)">+</button>
+          </div>
+          <button class="comprar">Compre Já</button>
+        </div>
+        <div class="produto">
+          <img src="./imagens/smirnoff.png" alt="Product 6">
+          <h2>Smirnoff - 1L</h2>
+          <div class="preco">R$140.00</div>
+          <div class="subtitulo">No pix ou no dinheiro</div>
+          <div class="quantidade">
+            <button onclick="diminuir(event)">-</button>
+            <input type="number" value="1" min="1">
+            <button onclick="aumentar(event)">+</button>
+          </div>
+          <button class="comprar">Compre Já</button>
+        </div>
+        <div class="produto">
+          <img src="./imagens/skyy.png" alt="Product 7">
+          <h2>Skyy - 1L</h2>
+          <div class="preco">R$60.00</div>
+          <div class="subtitulo">No pix ou no dinheiro</div>
+          <div class="quantidade">
+            <button onclick="diminuir(event)">-</button>
+            <input type="number" value="1" min="1">
+            <button onclick="aumentar(event)">+</button>
+          </div>
+          <button class="comprar">Compre Já</button>
+        </div>
+        <div class="produto">
+          <img src="./imagens/pravda.jpg" alt="Product 8">
+          <h2>Pravda - 750ml</h2>
+          <div class="preco">R$130.00</div>
           <div class="subtitulo">No pix ou no dinheiro</div>
           <div class="quantidade">
             <button onclick="diminuir(event)">-</button>

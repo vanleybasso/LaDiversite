@@ -17,3 +17,15 @@ function diminuir(event) {
   function pagina_inicial(pageUrl) {
     window.location.href = pageUrl;
   }
+
+  function categoria_licor(pageUrl) {
+    window.location.href = pageUrl;
+  }
+  
+  function categoria_gin(pageUrl) {
+    window.location.href = pageUrl;
+  }
+
+  function categoria_vodka(pageUrl) {
+    window.location.href = pageUrl;
+  }
