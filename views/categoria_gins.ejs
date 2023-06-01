@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>La Diversité - Categoria Gin</title>
+    <link rel="stylesheet" href="/stylesheets/categoria_whisky.css">
+    <script src="/javascripts/categoria_gins.js"></script>
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="./imagens/logo.png" alt="Logo da Empresa" onclick="pagina_inicial('/')">
+      <img id="nome_empresa" src="./imagens/nome_empresa.png" alt="Nome da Empresa" onclick="pagina_inicial('/')">
+      <form>
+        <input type="text" placeholder="Pesquisar...">
+        <button>Pesquisar</button>
+      </form>
+      <a href="/login">
+        <img id="perfil" src="imagens/minha_conta.png" alt="Minha Conta" class="account">
+      </a>
+      <img id="carrinho" src="imagens/carrinho.png" alt="Carrinho de Compras" class="cart">
+    </header>
+    </header>
+     <div class="categorias">
+      <div class="categoria" onclick="categoria_whisky('/whisky')">
+        <h2 id="titulo_categoria">WHISKYS</h2>
+        <img src="./imagens/WHISKYS.png" alt="WHISKYS">
+      </div>
+      <div class="categoria" onclick="categoria_licor('/licor')">
+        <h2>LICORES</h2>
+        <img src="./imagens/LICORES.png" alt="LICORES">
+      </div>
+      <div class="categoria" onclick="location.reload();">
+        <h2>GINS</h2>
+        <img src="./imagens/GINS.png" alt="GINS">
+      </div>
+      <div class="categoria" onclick="categoria_vodka('/vodka')" >
+        <h2>VODKAS</h2>
+        <img src="./imagens/VODKAS.png" alt="VODKAS">
+      </div>
+      <div class="categoria">
+        <h2>TEQUILAS</h2>
+        <img src="./imagens/TEQUILAS.png" alt="TEQUILAS">
+      </div>
+      <div class="categoria">
+        <h2>ESPUMANTES</h2>
+        <img src="./imagens/ESPUMANTES.png" alt="ESPUMANTES">
+      </div>
+    </div>
+    <img id="slogan" src="./imagens/slogan.png" alt="slogan" class="slogan">
+    <div id="whiskys">
+        <h2>GIN</h2>
+      </div>
+      <div class="produtos">
+        <div class="produto">
+          <img src="./imagens/tanqueray.jpeg" alt="Product 1">
+          <h2 id="titulo">Tanqueray - 700ml </h2>
+          <div class="preco">R$120.00</div>
+          <div class="subtitulo">No pix ou no dinheiro</div>
+          <div class="quantidade">
+            <button onclick="diminuir(event)">-</button>
+            <input type="number" value="1" min="1">
+            <button onclick="aumentar(event)">+</button>
+          </div>
+          <button class="comprar">Compre Já</button>
+        </div>
+        <div class="produto">
+          <img src="./imagens/bombay.png" alt="Product 2">
+          <h2>Bombay Sapphire - 1L</h2>
+          <div class="preco">R$140.00</div>
+          <div class="subtitulo">No pix ou no dinheiro</div>
+          <div class="quantidade">
+            <button onclick="diminuir(event)">-</button>
+            <input type="number" value="1" min="1">
+            <button onclick="aumentar(event)">+</button>
+          </div>
+          <button class="comprar">Compre Já</button>
+        </div>
+        <div class="produto">
+          <img src="./imagens/beefeater.jpg" alt="Product 3">
+          <h2>Beefeater - 1L</h2>
+          <div class="preco">R$120.00
+          </div>
+          <div class="subtitulo">No pix ou no dinheiro</div>
+          <div class="quantidade">
+            <button onclick="diminuir(event)">-</button>
+            <input type="number" value="1" min="1">
+            <button onclick="aumentar(event)">+</button>
+          </div>
+          <button class="comprar">Compre Já</button>
+        </div>
+        <div class="produto">
+          <img src="./imagens/hendricks.jpg" alt="Product 4">
+          <h2>Hendrick's - 750ml</h2>
+          <div class="preco">R$180.00</div>
+          <div class="subtitulo">No pix ou no dinheiro</div>
+          <div class="quantidade">
+            <button onclick="diminuir(event)">-</button>
+            <input type="number" value="1" min="1">
+            <button onclick="aumentar(event)">+</button>
+          </div>
+          <button class="comprar">Compre Já</button>
+        </div>
+      </div>
+      <div class="produtos">
+        <div class="produto">
+          <img src="./imagens/bulldog.jpg" alt="Product 5">
+          <h2>Bulldog - 750ml</h2>
+          <div class="preco">R$160.00</div>
+          <div class="subtitulo">No pix ou no dinheiro</div>
+          <div class="quantidade">
+            <button onclick="diminuir(event)">-</button>
+            <input type="number" value="1" min="1">
+            <button onclick="aumentar(event)">+</button>
+          </div>
+          <button class="comprar">Compre Já</button>
+        </div>
+        <div class="produto">
+          <img src="./imagens/sevilla.jpg" alt="Product 6">
+          <h2>Tanqueray Sevilla - 700ml</h2>
+          <div class="preco">R$140.00</div>
+          <div class="subtitulo">No pix ou no dinheiro</div>
+          <div class="quantidade">
+            <button onclick="diminuir(event)">-</button>
+            <input type="number" value="1" min="1">
+            <button onclick="aumentar(event)">+</button>
+          </div>
+          <button class="comprar">Compre Já</button>
+        </div>
+        <div class="produto">
+          <img src="./imagens/seagers.png" alt="Product 7">
+          <h2>Seagers - 1L</h2>
+          <div class="preco">R$50.00</div>
+          <div class="subtitulo">No pix ou no dinheiro</div>
+          <div class="quantidade">
+            <button onclick="diminuir(event)">-</button>
+            <input type="number" value="1" min="1">
+            <button onclick="aumentar(event)">+</button>
+          </div>
+          <button class="comprar">Compre Já</button>
+        </div>
+        <div class="produto">
+          <img src="./imagens/gordon.jpeg" alt="Product 8">
+          <h2>Gordon's - 1L</h2>
+          <div class="preco">R$80.00</div>
+          <div class="subtitulo">No pix ou no dinheiro</div>
+          <div class="quantidade">
+            <button onclick="diminuir(event)">-</button>
+            <input type="number" value="1" min="1">
+            <button onclick="aumentar(event)">+</button>
+          </div>
+          <button class="comprar">Compre Já</button>
+        </div>
+      </div>
+      <footer>
+        <p>La Diversité &copy; 2023. Todos os direitos reservados.</p>
+        <p>Endereço: Avenida Severiano de Almeida, 1110 - Getúlio  Vargas - RS</p>
+        <p>Telefone: (54) 99621-4447 | Email: ladiversiteoficial@gmail.com</p>
+        <p>
+          <a href="#">Termos de Serviço</a> | <a href="#">Política de Privacidade</a>
+        </p>
+      </footer>
