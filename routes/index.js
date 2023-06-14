@@ -30,5 +30,12 @@ router.get('/login', function(req, res, next) {
   res.render('login', { title: 'login' });
 });
 
+router.get('/tequila', function(req, res, next) {
+  res.render('categoria_tequila', { title: 'categoria_tequila' });
+});
+
+router.get('/espumante', function(req, res, next) {
+  res.render('categoria_espumante', { title: 'categoria_espumante' });
+});
 
 module.exports = router;

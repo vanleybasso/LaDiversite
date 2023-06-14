@@ -31,3 +31,10 @@ function diminuir() {
   function categoria_vodka(url) {
     window.location.href = url;
   }
+
+  function categoria_tequila(url) {
+    window.location.href = url;
+  }
+  function categoria_espumante(url) {
+    window.location.href = url;
+  }

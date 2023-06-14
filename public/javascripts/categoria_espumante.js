@@ -23,14 +23,14 @@ function diminuir() {
     window.location.href = pageUrl;
   }
 
-  function categoria_gin(url) {
-    window.location.href = url;
+  function categoria_gins(pageUrl) {
+    window.location.href = pageUrl;
   }
 
-  function categoria_tequila(url) {
-    window.location.href = url;
+  function categoria_vodka(pageUrl) {
+    window.location.href = pageUrl;
   }
 
-  function categoria_espumante(url) {
-    window.location.href = url;
+  function categoria_tequila(pageUrl) {
+    window.location.href = pageUrl;
   }

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>La Diversité - Categoria Vodka</title>
+    <title>La Diversité - Categoria Tequila</title>
     <link rel="stylesheet" href="/stylesheets/categoria_whisky.css">
-    <script src="/javascripts/categoria_vodka.js"></script>
+    <script src="/javascripts/categoria_tequila.js"></script>
   </head>
   <body>
     <header>
@@ -28,15 +28,15 @@
         <h2>LICORES</h2>
         <img src="./imagens/LICORES.png" alt="LICORES">
       </div>
-      <div class="categoria" onclick="categoria_gin('/gin')">
+      <div class="categoria" onclick="categoria_gins('/gin')">
         <h2>GINS</h2>
         <img src="./imagens/GINS.png" alt="GINS">
       </div>
-      <div class="categoria" onclick="location.reload();">
+      <div class="categoria" onclick="categoria_vodka('/vodka')" >
         <h2>VODKAS</h2>
         <img src="./imagens/VODKAS.png" alt="VODKAS">
       </div>
-      <div class="categoria" onclick="categoria_tequila('/tequila')">
+      <div class="categoria" onclick="location.reload();">
         <h2>TEQUILAS</h2>
         <img src="./imagens/TEQUILAS.png" alt="TEQUILAS">
       </div>
@@ -47,13 +47,13 @@
     </div>
     <img id="slogan" src="./imagens/slogan.png" alt="slogan" class="slogan">
     <div id="whiskys">
-        <h2>VODKA</h2>
+        <h2>TEQUILAS</h2>
       </div>
       <div class="produtos">
         <div class="produto">
-          <img src="./imagens/tanqueray.jpeg" alt="Product 1">
-          <h2 id="titulo">Absolut - 1L</h2>
-          <div class="preco">R$90.00</div>
+          <img src="/imagens/cuervosilver.png" alt="Product 1">
+          <h2 id="titulo">J. Cuervo Silver - 700ml </h2>
+          <div class="preco">R$100.00</div>
           <div class="subtitulo">No pix ou no dinheiro</div>
           <div class="quantidade">
             <button onclick="diminuir(event)">-</button>
@@ -63,9 +63,9 @@
           <button class="comprar">Compre Já</button>
         </div>
         <div class="produto">
-          <img src="./imagens/greygoose.jpg" alt="Product 2">
-          <h2>Grey Goose - 700ml</h2>
-          <div class="preco">R$140.00</div>
+          <img src="./imagens/cuervo.png" alt="Product 2">
+          <h2>J. Cuervo Gold - 700ml</h2>
+          <div class="preco">R$120.00</div>
           <div class="subtitulo">No pix ou no dinheiro</div>
           <div class="quantidade">
             <button onclick="diminuir(event)">-</button>
@@ -75,9 +75,9 @@
           <button class="comprar">Compre Já</button>
         </div>
         <div class="produto">
-          <img src="./imagens/ciroc.jpg" alt="Product 3">
-          <h2>Ciroc - 750ml</h2>
-          <div class="preco">R$180.00
+          <img src="./imagens/1800.jpg" alt="Product 3">
+          <h2>1800 Reposado - 750ml</h2>
+          <div class="preco">R$150.00
           </div>
           <div class="subtitulo">No pix ou no dinheiro</div>
           <div class="quantidade">
@@ -88,9 +88,9 @@
           <button class="comprar">Compre Já</button>
         </div>
         <div class="produto">
-          <img src="./imagens/belvedere.png" alt="Product 4">
-          <h2>Belvedere - 750ml</h2>
-          <div class="preco">R$200.00</div>
+          <img src="/imagens/milagro.png" alt="Product 4">
+          <h2>Milagro - 750ml</h2>
+          <div class="preco">R$400.00</div>
           <div class="subtitulo">No pix ou no dinheiro</div>
           <div class="quantidade">
             <button onclick="diminuir(event)">-</button>
@@ -100,56 +100,7 @@
           <button class="comprar">Compre Já</button>
         </div>
       </div>
-      <div class="produtos">
-        <div class="produto">
-          <img src="./imagens/elyx.png" alt="Product 5">
-          <h2>Absolut Elyx - 1L</h2>
-          <div class="preco">R$350.00</div>
-          <div class="subtitulo">No pix ou no dinheiro</div>
-          <div class="quantidade">
-            <button onclick="diminuir(event)">-</button>
-            <input type="number" value="1" min="1">
-            <button onclick="aumentar(event)">+</button>
-          </div>
-          <button class="comprar">Compre Já</button>
-        </div>
-        <div class="produto">
-          <img src="./imagens/smirnoff.png" alt="Product 6">
-          <h2>Smirnoff - 1L</h2>
-          <div class="preco">R$140.00</div>
-          <div class="subtitulo">No pix ou no dinheiro</div>
-          <div class="quantidade">
-            <button onclick="diminuir(event)">-</button>
-            <input type="number" value="1" min="1">
-            <button onclick="aumentar(event)">+</button>
-          </div>
-          <button class="comprar">Compre Já</button>
-        </div>
-        <div class="produto">
-          <img src="./imagens/skyy.png" alt="Product 7">
-          <h2>Skyy - 1L</h2>
-          <div class="preco">R$60.00</div>
-          <div class="subtitulo">No pix ou no dinheiro</div>
-          <div class="quantidade">
-            <button onclick="diminuir(event)">-</button>
-            <input type="number" value="1" min="1">
-            <button onclick="aumentar(event)">+</button>
-          </div>
-          <button class="comprar">Compre Já</button>
-        </div>
-        <div class="produto">
-          <img src="./imagens/pravda.jpg" alt="Product 8">
-          <h2>Pravda - 750ml</h2>
-          <div class="preco">R$130.00</div>
-          <div class="subtitulo">No pix ou no dinheiro</div>
-          <div class="quantidade">
-            <button onclick="diminuir(event)">-</button>
-            <input type="number" value="1" min="1">
-            <button onclick="aumentar(event)">+</button>
-          </div>
-          <button class="comprar">Compre Já</button>
-        </div>
-      </div>
+     
       <footer>
         <p>La Diversité &copy; 2023. Todos os direitos reservados.</p>
         <p>Endereço: Avenida Severiano de Almeida, 1110 - Getúlio  Vargas - RS</p>
@@ -158,5 +109,5 @@
           <a href="#">Termos de Serviço</a> | <a href="#">Política de Privacidade</a>
         </p>
       </footer>
-    </body>
-    </html>
+  </body>
+</html>
