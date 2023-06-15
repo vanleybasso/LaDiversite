@@ -16,10 +16,17 @@
       <a href="/login">
         <img id="perfil" src="imagens/minha_conta.png" alt="Minha Conta" class="account">
       </a>
-      <img id="carrinho" src="imagens/carrinho.png" alt="Carrinho de Compras" class="cart">
-    </header>
-    </header>
-     <div class="categorias">
+      <img id="carrinho" src="imagens/carrinho.png" alt="Carrinho de Compras" class="cart" onclick="mostrarNav()">
+
+      </header>
+      <nav id="carrinhoNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="fecharNav()">&times; Fechar</a>
+        <h3 id="titulo_carrinho">Meu carrinho</h3>
+        <p>Valor total:</p>
+        <button id="finalizar_pedido">Finalizar pedido</button>
+      </nav>
+      <main>
+    <div class="categorias">
       <div class="categoria" onclick="location.reload();">
         <h2 id="titulo_categoria">WHISKYS</h2>
         <img src="./imagens/WHISKYS.png" alt="WHISKYS">
@@ -200,6 +207,7 @@
           <button class="comprar">Compre Já</button>
         </div>
       </div>
+
       <footer>
         <p>La Diversité &copy; 2023. Todos os direitos reservados.</p>
         <p>Endereço: Avenida Severiano de Almeida, 1110 - Getúlio  Vargas - RS</p>
@@ -208,5 +216,6 @@
           <a href="#">Termos de Serviço</a> | <a href="#">Política de Privacidade</a>
         </p>
       </footer>
+    </main>
     </body>
     </html>

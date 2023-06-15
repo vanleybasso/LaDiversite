@@ -267,3 +267,95 @@ header {
   #titulo_categoria:hover {
     text-decoration: underline;
   }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #ff0000;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+
+  #carrinhoNav {
+    display: none;
+  }
+
+  #carrinhoNav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0; /* Estender até o final da página */
+    width: 300px; /* Largura do carrinho de compras */
+    background-color: #e7e2e2; /* Cor de fundo cinza */
+    justify-content: center; /* Alinhar itens verticalmente no centro */
+    flex-direction: column; /* Alinhar itens verticalmente */ 
+    padding: 20px; /* Espaçamento interno para o conteúdo do carrinho */
+    
+    /* Outros estilos desejados */
+  }
+  
+
+  #carrinhoNav.aberto {
+    transform: translate(0, 0);
+  }
+  
+  #finalizar_pedido{
+    padding: 10px 20px;
+    background-color: #560000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  
+  }
+
+  .closebtn {
+    color: #000000; /* cor do texto */
+    font-size: 18px; /* tamanho da fonte */
+    font-weight: bold; /* peso da fonte */
+    text-decoration: none; /* remover sublinhado do texto */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .closebtn:hover {
+    color: #560000; /* cor do texto ao passar o mouse */
+  }
+  

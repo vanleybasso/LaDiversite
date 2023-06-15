@@ -38,3 +38,7 @@ function diminuir() {
   function categoria_espumante(url) {
     window.location.href = url;
   }
+
+  function pagamento(url) {
+    window.location.href = url;
+  }

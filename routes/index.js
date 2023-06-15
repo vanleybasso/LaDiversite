@@ -38,4 +38,21 @@ router.get('/espumante', function(req, res, next) {
   res.render('categoria_espumante', { title: 'categoria_espumante' });
 });
 
+router.get('/pedidos', function(req, res, next) {
+  res.render('pedidos', { title: 'pedidos' });
+});
+
+router.get('/registro', function(req, res, next) {
+  res.render('registro', { title: 'registro' });
+});
+
+
+router.get('/finalizacao', function(req, res, next) {
+  res.render('finalizacao', { title: 'finalizacao' });
+});
+
+router.get('/pagamento', function(req, res, next) {
+  res.render('pagamento', { title: 'pagamento' });
+});
+
 module.exports = router;

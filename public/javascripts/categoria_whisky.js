@@ -36,3 +36,25 @@ function diminuir(event) {
   function categoria_espumante(url) {
     window.location.href = url;
   }
+
+  
+  function abrirNav() {
+    document.getElementById("myNav").style.width = "250px";
+  }
+  
+  function fecharNav() {
+    document.getElementById("carrinhoNav").style.width = "0";
+    document.getElementById("carrinhoNav").classList.remove("aberto");
+  }
+  
+  function mostrarNav() {
+    var nav = document.getElementById("carrinhoNav");
+    nav.style.display = "block";
+  }
+  
+  function acionarCarrinho() {
+    var carrinhoNav = document.getElementById("carrinhoNav");
+    carrinhoNav.classList.toggle("aberto");
+  }
+  
+  

@@ -1,51 +1,48 @@
 body {
-    background-color: rgb(90, 6, 6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .login {
-    text-align: center;
-  }
-  
-  h1 {
-    color: white;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    background-color: rgb(2, 2, 44);
-    padding: 40px;
-    border-radius: 20px;
-  }
-  
-  input[type="text"],
-  input[type="password"] {
-    height: 30px;
-    margin-bottom: 20px;
-    padding: 5px;
-    border-radius: 20px;
-  }
-  
-  button {
-    background-color: navy;
-    color: white;
-    border: none;
-    height: 30px;
-    cursor: pointer;
-  }
-  
-  button {
-    background-color: green; /* Alteração da cor para verde */
-    color: white;
-    border: none;
-    height: 30px;
-    cursor: pointer;
-    border-radius: 20px;
-  }
-  
+  background-color: rgb(90, 6, 6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Alteração para altura mínima de 100% da viewport */
+  margin: 0;
+}
+
+.login {
+  text-align: center;
+}
+
+img {
+  height: 200px;
+  max-width: 100%; /* Adição para garantir que a imagem não exceda a largura do contêiner */
+}
+
+h1 {
+  color: burlywood;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: rgb(2, 2, 44);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  height: 30px;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+button {
+  background-color: green; /* Alteração da cor para verde */
+  color: white;
+  border: none;
+  width: 300px;
+  cursor: pointer;
+  height: 30px; /* Adição da altura para o botão */
+  border-radius: 20px;
+}

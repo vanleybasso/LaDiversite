@@ -1,0 +1,203 @@
+/* Estilos CSS para o cabeçalho */
+header {
+    background-color: #560000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
+  #logo  {
+    height: 100px;
+   }
+
+   #nome_empresa{
+    height: 40px;
+    margin-left:  -100px;
+  }
+
+  #perfil{
+    margin-left: 80px;
+  }
+
+  #carrinho{
+      margin-right: 110px;
+  }
+
+  #perfil {
+    margin-left: 80px;
+    filter: hue-rotate(45deg);
+  }
+  
+  #carrinho {
+    margin-right: 110px;
+    filter: hue-rotate(45deg);
+  }
+  .slogan {
+    width: 500%;
+    height: auto; /* Ajusta a altura automaticamente para corresponder à imagem */
+  }
+  #perfil:hover {
+    transform: scale(1.1);
+  }
+
+  #carrinho:hover {
+    transform: scale(1.1);
+  }
+
+  #logo:hover {
+    transform: scale(1.1);
+  }
+  
+  #nome_empresa:hover {
+    transform: scale(1.1);
+  }
+
+
+  form{
+    margin-left: 100px;
+  }
+
+  header form {
+    display: flex;
+    align-items: center;
+  }
+  
+  header input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+  }
+
+  header button {
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
+  header .account {
+    margin-right: 10px;
+    height: 30px;
+  }
+
+  header .cart {
+    height: 30px;
+  }
+
+  .categorias {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #e7e2e2;
+  }
+
+  .categoria {
+    text-align: center;
+    width: calc(100% / 6); /* Distribui as categorias igualmente em 6 colunas */
+  }
+
+  .categoria h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .categoria img {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Estilos CSS para a imagem na faixa horizontal */
+  .slogan {
+    width: 100%;
+    max-height: 200px; /* Defina a altura desejada para a imagem */
+    object-fit: cover;
+  }
+
+  .categoria:hover{
+    transform: scale(1.03);
+  }
+  #titulo_categoria:hover {
+    text-decoration: underline;
+  }
+
+  body {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #titulo_pedidos {
+    background-color: #e7e2e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Ajuste a altura conforme necessário */
+  }
+
+  #dados {
+    background-color: #e7e2e2;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  #dados h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  #dados p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  #dados span {
+    font-weight: bold;
+  }
+
+  #meus_pedidos {
+    background-color: #e7e2e2;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  #meus_pedidos h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  #meus_pedidos p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  #meus_pedidos span {
+    font-weight: bold;
+  }
+
+  footer {
+    background-color: #560000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
