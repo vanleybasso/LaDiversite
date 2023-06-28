@@ -6,15 +6,35 @@
 </head>
 <body>
   <div class="registro">
-    <img src="/imagens/logo.png" alt="Logo da Empresa">
-    <h1>𝐋𝐚𝐃𝐢𝐯𝐞𝐫𝐬𝐢𝐭é</h1>
-    <form>
-      <input type="text" placeholder="Nome ou CPF" required>
-      <input type="password" placeholder="Senha" required>
-      <input type="email" placeholder="E-Mail" required>
-      <input type="number" placeholder="Idade" required>
-      <button type="submit">Registrar</button>
+    <img id="imagemempresa" src="/imagens/logo.png" alt="Logo da Empresa">
+    
+    <div class="formulario">
+      <h2 id="titulo">Faça seu cadastro abaixo</h2>
+    <form action="/registro" method="POST">
+      <label for="matricula">Matrícula:</label>
+      <input type="number" id="matricula" name="matricula" placeholder="Digite sua matricula" required>
+      
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" placeholder="Digite uma senha" required>
+      
+      <label for="confirmar-senha">Confirmar Senha:</label>
+      <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Digite sua senha novamente" required>
+      
+      <button type="submit">Realizar Cadastro</button>
     </form>
   </div>
+  <div id="alert-message"></div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+const errorMessage = `<%- errorMessage %>`;
+const successMessage = `<%- successMessage %>`;
+
+if (errorMessage) {
+  window.alert(errorMessage);
+} else if (successMessage) {
+  window.alert(successMessage);
+}
+});
+</script>
 </body>
 </html>

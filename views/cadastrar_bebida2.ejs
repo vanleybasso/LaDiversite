@@ -1,0 +1,90 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>La Diversité - Alterar</title>
+      <link rel="stylesheet" href="/stylesheets/categoria_whisky.css">
+      <link rel="stylesheet" href="/stylesheets/pagina_inicial.css">
+      <link rel="stylesheet" href="/stylesheets/cadastrar_bebida.css">
+      <script src="/javascripts/categoria_gins.js"></script>
+    </head>
+    <body>
+      <header>
+        <img id="logo" src="/imagens/logo.png" alt="Logo da Empresa" onclick="pagina_inicial('/')">
+        <img id="nome_empresa" src="/imagens/nome_empresa.png" alt="Nome da Empresa" onclick="pagina_inicial('/')">
+        <form>
+          <input type="text" placeholder="Pesquisar...">
+          <button>Pesquisar</button>
+        </form>
+        <div class="account-dropdown">
+          <img id="perfil" src="/imagens/minha_conta.png" alt="Minha Conta" class="account" onclick="toggleAccountOptions()">
+          <div id="account-options" class="account-options">
+            <a href="/login">Login</a>
+            <a href="/pedidos">Minha Conta</a>
+            <a href="/bebidas">Gerenciar Produtos</a>
+          </div>
+        </div>
+        <img id="carrinho" src="/imagens/carrinho.png" alt="Carrinho de Compras" class="cart" onclick="toggleCarrinho()">
+      </header>
+      <div class="categorias">
+        <div class="categoria" onclick="categoria_whisky('/whisky')">
+          <h2 id="titulo_categoria">WHISKYS</h2>
+          <img src="/imagens/WHISKYS.png" alt="WHISKYS">
+        </div>
+        <div class="categoria" onclick="categoria_licor('/licor')">
+          <h2>LICORES</h2>
+          <img src="/imagens/LICORES.png" alt="LICORES">
+        </div>
+        <div class="categoria" onclick="location.reload();">
+          <h2>GINS</h2>
+          <img src="/imagens/GINS.png" alt="GINS">
+        </div>
+        <div class="categoria" onclick="categoria_vodka('/vodka')" >
+          <h2>VODKAS</h2>
+          <img src="/imagens/VODKAS.png" alt="VODKAS">
+        </div>
+        <div class="categoria" onclick="categoria_tequila('/tequila')">
+          <h2>TEQUILAS</h2>
+          <img src="/imagens/TEQUILAS.png" alt="TEQUILAS">
+        </div>
+        <div class="categoria" onclick="categoria_espumante('/espumante')">
+          <h2>ESPUMANTES</h2>
+          <img src="/imagens/ESPUMANTES.png" alt="ESPUMANTES">
+        </div>
+      </div>
+      <img id="slogan" src="/imagens/slogan.png" alt="slogan" class="slogan">
+      <div id="whiskys">
+          <h2>ALTERAR PRODUTO</h2>
+        </div>
+        <div class="formulario">
+          <h2>Insira os dados abaixo:</h2>
+          <form action="/alterar/" method="POST">
+            <input type="hidden" id="id" name="id" value="<%= bebida.id%>" />
+
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" value = "<%= bebida.nome%>" required>
+      
+            <label for="preco">Preço:</label>
+            <input type="number" id="preco" name="preco" value = "<%= bebida.preco%>" required>
+      
+            <label for="categoria">Categoria:</label>
+            <input type="text" id="categoria" name="categoria" value = "<%= bebida.categoria%>" required>
+      
+            <div class="botoes">
+            <button type="submit">Alterar Produto</button>
+            <div class="cancelar-container">
+            <a class="cancelar" href="/bebidas">Cancelar</a>
+          </div>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <p>La Diversité &copy; 2023. Todos os direitos reservados.</p>
+      <p>Endereço: Avenida Severiano de Almeida, 1110 - Getúlio  Vargas - RS</p>
+      <p>Telefone: (54) 99621-4447 | Email: ladiversiteoficial@gmail.com</p>
+      <p>
+        <a href="#">Termos de Serviço</a> | <a href="#">Política de Privacidade</a>
+      </p>
+    </footer>
+  </body>
+  </html>

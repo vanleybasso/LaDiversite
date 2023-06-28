@@ -26,6 +26,7 @@ form {
   background-color: rgb(2, 2, 44);
   padding: 5vw; /* Alteração do preenchimento para 5% da largura da viewport */
   border-radius: 20px;
+  color: white;
 }
 
 input[type="text"],
@@ -39,7 +40,7 @@ input[type="number"] {
 }
 
 button {
-  background-color: navy;
+  background-color: #000080;
   color: white;
   border: none;
   width: 30vw; /* Alteração da largura para 30% da largura da viewport */
@@ -53,4 +54,13 @@ button {
   height: 5vh; /* Alteração da altura para 5% da altura da viewport */
   cursor: pointer;
   border-radius: 20px;
+}
+
+#titulo{
+  color: #b19775;
+}
+
+#imagemempresa{
+  width: 150px;
+  height: 150px;
 }

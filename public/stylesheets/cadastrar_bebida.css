@@ -1,0 +1,61 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Adicionada esta linha */
+  }
+  
+  .formulario label, .formulario input {
+    display: block;
+    margin: 10px;
+  }
+  
+  .formulario input[type="text"],
+  .formulario input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+    max-width: 100%;
+    background-color: #e7e2e2;
+  }
+  
+  .botoes {
+    margin-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center; /* Centralizar horizontalmente os botões */
+    align-items: center;
+    width: 100%; /* Adicionada esta propriedade */
+  }
+  
+  button {
+    background-color:#560000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px; /* Adicionada esta propriedade */
+  }
+  
+  .cancelar {
+    background-color: #560000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px; /* Adicionada esta propriedade */
+  }
+
+  .formulario input:focus {
+    outline: none; /* Remover a borda padrão do navegador */
+    box-shadow: 0 0 5px #560000; /* Adicionar uma sombra quando em foco */
+  }
+
+  

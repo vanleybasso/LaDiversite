@@ -3,6 +3,7 @@
   <head>
     <title>La Diversité - Categoria Whiskys</title>
     <link rel="stylesheet" href="/stylesheets/categoria_whisky.css">
+    <link rel="stylesheet" href="/stylesheets/pagina_inicial.css">
     <script src="/javascripts/categoria_whisky.js"></script>
   </head>
   <body>
@@ -13,19 +14,17 @@
         <input type="text" placeholder="Pesquisar...">
         <button>Pesquisar</button>
       </form>
-      <a href="/login">
-        <img id="perfil" src="imagens/minha_conta.png" alt="Minha Conta" class="account">
-      </a>
-      <img id="carrinho" src="imagens/carrinho.png" alt="Carrinho de Compras" class="cart" onclick="mostrarNav()">
-
-      </header>
-      <nav id="carrinhoNav">
-        <a href="javascript:void(0)" class="closebtn" onclick="fecharNav()">&times; Fechar</a>
-        <h3 id="titulo_carrinho">Meu carrinho</h3>
-        <p>Valor total:</p>
-        <button id="finalizar_pedido">Finalizar pedido</button>
-      </nav>
-      <main>
+      <div class="account-dropdown">
+        <img id="perfil" src="imagens/minha_conta.png" alt="Minha Conta" class="account" onclick="toggleAccountOptions()">
+        <div id="account-options" class="account-options">
+          <a href="/login">Login</a>
+          <a href="/pedidos">Minha Conta</a>
+          <a href="/bebidas">Gerenciar Produtos</a>
+        </div>
+      </div>
+      <img id="carrinho" src="imagens/carrinho.png" alt="Carrinho de Compras" class="cart" onclick="toggleCarrinho()">
+    </header>
+      
     <div class="categorias">
       <div class="categoria" onclick="location.reload();">
         <h2 id="titulo_categoria">WHISKYS</h2>
@@ -207,6 +206,7 @@
           <button class="comprar">Compre Já</button>
         </div>
       </div>
+   
 
       <footer>
         <p>La Diversité &copy; 2023. Todos os direitos reservados.</p>
